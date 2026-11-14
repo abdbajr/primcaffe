@@ -7,8 +7,8 @@ import "mapbox-gl/dist/mapbox-gl.css";
 const TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? "";
 
 // Prim Caffe koordinater — Xhon Kenedi 9A-1/001, Skopje
-const LNG = 21.4316;
-const LAT = 41.9981;
+const LNG = 21.43869598815062;
+const LAT = 42.01309007223262;
 
 export default function Map() {
   const containerRef = useRef<HTMLDivElement>(null);
