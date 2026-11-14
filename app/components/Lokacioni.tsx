@@ -48,9 +48,9 @@ export default function Lokacioni() {
               className="grid gap-y-0 gap-x-8 text-sm"
               style={{ gridTemplateColumns: "auto 1fr", lineHeight: 2.1, color: "#9a9088" }}
             >
-              <span style={{ color: "#e4dbd0" }}>Hën – Pre</span><span>07:00 – 21:00</span>
-              <span style={{ color: "#e4dbd0" }}>E shtunë</span><span>08:00 – 22:00</span>
-              <span style={{ color: "#e4dbd0" }}>E diel</span><span>09:00 – 20:00</span>
+              <span style={{ color: "#e4dbd0" }}>Hën – Pre</span><span>06:30 – 00:00</span>
+              <span style={{ color: "#e4dbd0" }}>E shtunë</span><span>06:30 – 00:00</span>
+              <span style={{ color: "#e4dbd0" }}>E diel</span><span>06:30 – 00:00</span>
             </div>
           </div>
 
