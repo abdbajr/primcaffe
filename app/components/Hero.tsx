@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-end px-6 md:px-12 pb-12 md:pb-16 relative overflow-hidden"
+      className="min-h-screen flex flex-col justify-center md:justify-end pt-24 md:pt-0 px-6 md:px-12 pb-12 md:pb-16 relative overflow-hidden"
       style={{ background: "#0e0d0c" }}
     >
       {/* Dekorativt bakgrundstext */}
