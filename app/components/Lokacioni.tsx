@@ -1,3 +1,9 @@
+"use client";
+
+import dynamic from "next/dynamic";
+
+const Map = dynamic(() => import("./Map"), { ssr: false });
+
 export default function Lokacioni() {
   return (
     <section
@@ -58,35 +64,8 @@ export default function Lokacioni() {
       </div>
 
       {/* Höger — karta */}
-      <div className="px-12 py-32 flex flex-col">
-        <div
-          className="flex-1 min-h-[420px] relative overflow-hidden flex items-center justify-center"
-          style={{ background: "#2a2420" }}
-        >
-          {/* Grid-linjer */}
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage:
-                "repeating-linear-gradient(0deg, transparent, transparent 49px, rgba(255,255,255,0.04) 50px), repeating-linear-gradient(90deg, transparent, transparent 49px, rgba(255,255,255,0.04) 50px)",
-            }}
-          />
-          <div className="relative z-10 flex flex-col items-center gap-3">
-            <div
-              className="w-2.5 h-2.5 rounded-full"
-              style={{
-                background: "#c8a96e",
-                animation: "pulse-ring 2.5s infinite",
-              }}
-            />
-            <span
-              className="font-[family-name:var(--font-bebas)] text-sm tracking-[0.3em]"
-              style={{ color: "#9a9088" }}
-            >
-              Prim Caffe
-            </span>
-          </div>
-        </div>
+      <div className="flex flex-col">
+        <Map />
       </div>
     </section>
   );
