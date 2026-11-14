@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-center md:justify-end pt-24 md:pt-0 px-6 md:px-12 pb-12 md:pb-16 relative overflow-hidden"
+      className="min-h-[60vh] md:min-h-screen flex flex-col justify-end px-6 md:px-12 pb-12 md:pb-16 pt-24 md:pt-0 relative overflow-hidden"
       style={{ background: "#0e0d0c" }}
     >
       {/* Dekorativt bakgrundstext */}
@@ -14,16 +14,9 @@ export default function Hero() {
         PRIM
       </span>
 
-      <p
-        className="absolute top-24 left-6 md:left-12 text-xs tracking-[0.3em] uppercase"
-        style={{ color: "#c8a96e" }}
-      >
-        Specialty Coffee · Shkup
-      </p>
-
       <h1
         className="font-[family-name:var(--font-bebas)] leading-[0.88] relative z-10 mb-8 md:mb-12"
-        style={{ fontSize: "clamp(5rem,20vw,20rem)", color: "#e4dbd0" }}
+        style={{ fontSize: "clamp(5.5rem,30vw,20rem)", color: "#e4dbd0" }}
       >
         PRIM
         <span

@@ -10,20 +10,20 @@ const images = [
 
 export default function Galleri() {
   return (
-    <section id="galleri" className="py-32 px-12" style={{ background: "#f5c842" }}>
+    <section id="galleri" className="py-12 md:py-24 px-6 md:px-12" style={{ background: "#f5c842" }}>
       <div
-        className="flex justify-between items-end mb-16 pb-6"
+        className="mb-8 md:mb-12 pb-4 md:pb-6"
         style={{ borderBottom: "1px solid rgba(0,0,0,0.12)" }}
       >
+        <span className="text-xs tracking-[0.25em] uppercase block mb-2" style={{ color: "rgba(0,0,0,0.4)" }}>
+          02 — Fotografi
+        </span>
         <h2
           className="font-[family-name:var(--font-bebas)] leading-[0.9] tracking-[0.02em]"
           style={{ fontSize: "clamp(4rem,10vw,10rem)", color: "#0e0d0c" }}
         >
           GALERIA
         </h2>
-        <span className="text-xs tracking-[0.25em] uppercase" style={{ color: "rgba(0,0,0,0.4)" }}>
-          02 — Fotografi
-        </span>
       </div>
 
       <div className="grid grid-cols-12 gap-4">
