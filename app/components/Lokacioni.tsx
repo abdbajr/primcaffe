@@ -8,13 +8,13 @@ export default function Lokacioni() {
   return (
     <section
       id="lokacioni"
-      className="min-h-screen grid grid-cols-2"
+      className="grid grid-cols-1 md:grid-cols-2"
       style={{ background: "#1e1a16" }}
     >
       {/* Vänster */}
       <div
-        className="flex flex-col justify-between px-12 py-32"
-        style={{ borderRight: "1px solid rgba(255,255,255,0.07)" }}
+        className="flex flex-col justify-between px-6 md:px-12 py-20 md:py-32"
+        style={{ borderRight: "0px" }}
       >
         <div>
           <p className="text-xs tracking-[0.3em] uppercase mb-8" style={{ color: "#c8a96e" }}>
@@ -63,8 +63,8 @@ export default function Lokacioni() {
         </div>
       </div>
 
-      {/* Höger — karta */}
-      <div className="flex flex-col">
+      {/* Karta */}
+      <div className="h-[400px] md:h-auto md:min-h-screen">
         <Map />
       </div>
     </section>
