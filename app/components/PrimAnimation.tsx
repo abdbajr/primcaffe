@@ -46,15 +46,15 @@ export default function PrimAnimation({ onDone, targetRef }: Props) {
       off.height = H;
       const offCtx = off.getContext("2d")!;
 
-      // Mät textstorleken från elementet
       const computedStyle = window.getComputedStyle(el);
       const fontSize = parseFloat(computedStyle.fontSize);
+      const lineHeight = parseFloat(computedStyle.lineHeight) || fontSize * 0.88;
 
       offCtx.fillStyle = "#e4dbd0";
-      offCtx.font = `400 ${fontSize * 0.98}px 'Bebas Neue', sans-serif`;
+      offCtx.font = `400 ${fontSize}px 'Bebas Neue', sans-serif`;
       offCtx.textAlign = "left";
-      offCtx.textBaseline = "top";
-      offCtx.fillText("PRIM", elX + elW * 0.01, elY);
+      offCtx.textBaseline = "alphabetic";
+      offCtx.fillText("PRIM", elX, elY + lineHeight * 0.82);
 
       const imageData = offCtx.getImageData(0, 0, W, H);
       const data = imageData.data;
