@@ -109,7 +109,7 @@ export default function Nav() {
           ))}
         </ul>
         <p className="absolute bottom-12 left-12 text-xs tracking-[0.2em] uppercase text-[#9a9088]">
-          Prim Caffe · Specialty Coffee · Shkup
+          Prim Caffe · Lavazza · Shkup
         </p>
       </div>
     </>
