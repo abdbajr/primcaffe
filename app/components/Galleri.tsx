@@ -42,7 +42,7 @@ export default function Galleri() {
           </div>
         </div>
         {/* Höger bild */}
-        <div className="col-span-5 relative overflow-hidden group" style={{ aspectRatio: images[1].ratio }}>
+        <div className="col-span-5 relative overflow-hidden group" style={{ alignSelf: "stretch", minHeight: "400px" }}>
           <Image
             src={images[1].src}
             alt={images[1].label}
