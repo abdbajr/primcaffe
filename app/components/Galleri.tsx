@@ -51,7 +51,7 @@ export default function Galleri() {
               <span className="text-[0.6rem] tracking-[0.2em] uppercase block mb-1" style={{ color: "rgba(0,0,0,0.4)" }}>02 — Fotografi</span>
               <div className="flex items-center gap-3">
                 <h2 className="font-[family-name:var(--font-bebas)] leading-[0.9]" style={{ fontSize: "clamp(2.5rem,12vw,5rem)", color: "#0e0d0c" }}>GALERIA</h2>
-                <img src="/images/coffee-cup.webp" alt="" width={36} height={36} style={{ flexShrink: 0, objectFit: "contain" }} />
+                <img src="/images/coffee-cup.webp" alt="" width={36} height={36} style={{ flexShrink: 0, objectFit: "contain", mixBlendMode: "multiply" }} />
               </div>
             </div>
             <div className="relative overflow-hidden" style={{ aspectRatio: "4/3" }}>
