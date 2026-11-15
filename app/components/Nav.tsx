@@ -104,9 +104,6 @@ export default function Nav() {
                 }}
               >
                 {item.label}
-                <span className="font-[family-name:var(--font-dm-sans)] text-xs tracking-[0.2em] text-[#9a9088] self-start mt-2">
-                  {item.num}
-                </span>
               </button>
             </li>
           ))}

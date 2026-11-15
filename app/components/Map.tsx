@@ -62,7 +62,7 @@ export default function Map() {
   return (
     <div
       ref={containerRef}
-      className="flex-1 min-h-[420px]"
+      className="w-full h-full min-h-[420px]"
       style={{ borderRadius: 0 }}
     />
   );

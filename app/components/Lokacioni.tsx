@@ -64,7 +64,7 @@ export default function Lokacioni() {
       </div>
 
       {/* Karta */}
-      <div className="h-[400px] md:h-auto md:min-h-screen">
+      <div className="h-[400px] md:h-auto md:self-stretch">
         <Map />
       </div>
     </section>
