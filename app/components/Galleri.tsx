@@ -70,9 +70,9 @@ export default function Galleri() {
       ═══════════════════════════ */}
       <div className="block md:hidden">
         {/* Rad 1 — text + kafeja vänster, fasada höger */}
-        <div className="grid grid-cols-2 gap-2 items-start mb-2">
+        <div className="grid gap-2 items-start mb-2" style={{ gridTemplateColumns: "3fr 2fr" }}>
           <div className="flex flex-col gap-2">
-            <div className="pb-3" style={{ borderBottom: "1px solid rgba(0,0,0,0.12)" }}>
+            <div className="pb-3">
               <span className="text-[0.6rem] tracking-[0.2em] uppercase block mb-1" style={{ color: "rgba(0,0,0,0.4)" }}>02 — Fotografi</span>
               <h2 className="font-[family-name:var(--font-bebas)] leading-[0.9]" style={{ fontSize: "clamp(2.5rem,12vw,5rem)", color: "#0e0d0c" }}>GALERIA</h2>
             </div>
