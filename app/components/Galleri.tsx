@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 const images = [
-  { src: "/images/Inne med kunder.jpeg", label: "Kafeja", span: "col-span-7" },
-  { src: "/images/Favvo.jpeg", label: "Fasada", span: "col-span-5" },
-  { src: "/images/Inne tom.jpeg", label: "Interieri", span: "col-span-4" },
-  { src: "/images/Maskinen.jpeg", label: "Makina", span: "col-span-4" },
-  { src: "/images/Soffa.jpeg", label: "Rehatësia", span: "col-span-4" },
+  { src: "/images/Inne med kunder.jpeg", label: "Kafeja", span: "col-span-7", ratio: "16/10", pos: "center" },
+  { src: "/images/Favvo.jpeg", label: "Fasada", span: "col-span-5", ratio: "16/10", pos: "center top" },
+  { src: "/images/Inne tom.jpeg", label: "Interieri", span: "col-span-4", ratio: "1/1", pos: "center" },
+  { src: "/images/Maskinen.jpeg", label: "Makina", span: "col-span-4", ratio: "1/1", pos: "center" },
+  { src: "/images/Soffa.jpeg", label: "Rehatësia", span: "col-span-4", ratio: "1/1", pos: "center" },
 ];
 
 export default function Galleri() {
@@ -31,13 +31,14 @@ export default function Galleri() {
           <div
             key={i}
             className={`${img.span} relative overflow-hidden group`}
-            style={{ aspectRatio: i === 0 ? "16/10" : i === 1 ? "4/5" : "1/1" }}
+            style={{ aspectRatio: img.ratio }}
           >
             <Image
               src={img.src}
               alt={img.label}
               fill
               className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+              style={{ objectPosition: img.pos }}
               sizes="(max-width: 768px) 100vw, 50vw"
             />
             <span
