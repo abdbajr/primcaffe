@@ -49,10 +49,7 @@ export default function Galleri() {
           <div className="flex flex-col gap-2">
             <div className="pb-3">
               <span className="text-[0.6rem] tracking-[0.2em] uppercase block mb-1" style={{ color: "rgba(0,0,0,0.4)" }}>02 — Fotografi</span>
-              <div className="flex items-baseline gap-2">
-                <h2 className="font-[family-name:var(--font-bebas)] leading-[0.9]" style={{ fontSize: "clamp(2.5rem,12vw,5rem)", color: "#0e0d0c" }}>GALERIA</h2>
-                <span className="font-[family-name:var(--font-cormorant)] italic" style={{ fontSize: "1.1rem", color: "rgba(0,0,0,0.75)" }}>Since 2018</span>
-              </div>
+              <h2 className="font-[family-name:var(--font-bebas)] leading-[0.9]" style={{ fontSize: "clamp(2.5rem,12vw,5rem)", color: "#0e0d0c" }}>GALERIA</h2>
             </div>
             <div className="relative overflow-hidden" style={{ aspectRatio: "4/3" }}>
               <Image src={images[0].src} alt={images[0].label} fill className="object-cover" sizes="50vw" />
