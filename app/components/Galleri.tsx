@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const images = [
   { src: "/images/Inne med kunder.jpeg", label: "Kafeja", span: "col-span-7", ratio: "16/10", pos: "center" },
-  { src: "/images/Favvo.jpeg", label: "Fasada", span: "col-span-5", ratio: "16/10", pos: "center top" },
+  { src: "/images/Favvo.jpeg", label: "Fasada", span: "col-span-5", ratio: "4/5", pos: "center top" },
   { src: "/images/Inne tom.jpeg", label: "Interieri", span: "col-span-4", ratio: "1/1", pos: "center" },
   { src: "/images/Maskinen.jpeg", label: "Makina", span: "col-span-4", ratio: "1/1", pos: "center" },
   { src: "/images/Soffa.jpeg", label: "Rehatësia", span: "col-span-4", ratio: "1/1", pos: "center" },
