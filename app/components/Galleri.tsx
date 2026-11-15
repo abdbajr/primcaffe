@@ -49,7 +49,21 @@ export default function Galleri() {
           <div className="flex flex-col gap-2">
             <div className="pb-3">
               <span className="text-[0.6rem] tracking-[0.2em] uppercase block mb-1" style={{ color: "rgba(0,0,0,0.4)" }}>02 — Fotografi</span>
-              <h2 className="font-[family-name:var(--font-bebas)] leading-[0.9]" style={{ fontSize: "clamp(2.5rem,12vw,5rem)", color: "#0e0d0c" }}>GALERIA</h2>
+              <div className="flex items-center gap-3">
+                <h2 className="font-[family-name:var(--font-bebas)] leading-[0.9]" style={{ fontSize: "clamp(2.5rem,12vw,5rem)", color: "#0e0d0c" }}>GALERIA</h2>
+                <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+                  {/* Kopp */}
+                  <path d="M8 16h26l-3 18H11L8 16z" stroke="#0e0d0c" strokeWidth="2" strokeLinejoin="round" fill="none"/>
+                  {/* Handtag */}
+                  <path d="M34 20h4a4 4 0 0 1 0 8h-4" stroke="#0e0d0c" strokeWidth="2" strokeLinecap="round" fill="none"/>
+                  {/* Fat */}
+                  <path d="M6 34h30" stroke="#0e0d0c" strokeWidth="2" strokeLinecap="round"/>
+                  {/* Ånga */}
+                  <path d="M16 12c0-2 2-2 2-4" stroke="#0e0d0c" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+                  <path d="M22 12c0-2 2-2 2-4" stroke="#0e0d0c" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+                  <path d="M28 12c0-2 2-2 2-4" stroke="#0e0d0c" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
+                </svg>
+              </div>
             </div>
             <div className="relative overflow-hidden" style={{ aspectRatio: "4/3" }}>
               <Image src={images[0].src} alt={images[0].label} fill className="object-cover" sizes="50vw" />
