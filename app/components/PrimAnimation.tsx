@@ -80,18 +80,27 @@ export default function PrimAnimation({ onDone, targetRef }: Props) {
         alpha: number; settled: boolean;
       };
 
-      const particles: Particle[] = targets.map((t) => ({
-        x: Math.random() < 0.5
-          ? -Math.random() * W * 0.5
-          : W + Math.random() * W * 0.5,
-        y: elY + elH * 0.5 + (Math.random() - 0.5) * elH * 2,
-        tx: t.x,
-        ty: t.y,
-        size: Math.random() * 1.5 + 0.3,
-        speed: 0.02 + Math.random() * 0.025,
-        alpha: Math.random() * 0.3 + 0.15,
-        settled: false,
-      }));
+      const particles: Particle[] = targets.map((t) => {
+        const r = Math.random();
+        let sx: number, sy: number;
+        if (r < 0.2) {
+          // vänster sida
+          sx = -Math.random() * W * 0.5;
+          sy = elY + elH * 0.5 + (Math.random() - 0.5) * elH * 2;
+        } else {
+          // höger sida, spridd längs hela höjden
+          sx = W + Math.random() * W * 0.4;
+          sy = Math.random() * H;
+        }
+        return {
+          x: sx, y: sy,
+          tx: t.x, ty: t.y,
+          size: Math.random() * 1.5 + 0.3,
+          speed: 0.015 + Math.random() * 0.02,
+          alpha: Math.random() * 0.5 + 0.3,
+          settled: false,
+        };
+      });
 
       let fadeOutStarted = false;
 
