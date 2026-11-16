@@ -64,8 +64,15 @@ export default function Lokacioni() {
       </div>
 
       {/* Karta */}
-      <div className="h-[400px] md:h-auto md:self-stretch">
+      <div className="relative h-[400px] md:h-auto md:self-stretch">
         <Map />
+        <a
+          href="https://maps.google.com/?q=42.01309007223262,21.43869598815062"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute inset-0 z-10 md:hidden"
+          aria-label="Hap në Google Maps"
+        />
       </div>
     </section>
   );
